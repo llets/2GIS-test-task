@@ -3,6 +3,7 @@ package utils;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import models.Config;
+import org.apache.logging.log4j.LogManager;
 
 import java.io.File;
 import java.io.IOException;
@@ -18,6 +19,7 @@ public class ConfigAndDataUtils {
     private static Config loadedConfig;
 
     public static <T> List<T> loadTestsDataFromJson(String testClassName, Class<T> clazz) {
+        LogManager.getLogger().info("Loading tests data from json");
         try {
             Map<String, List<Map<String, Object>>> testDataMap = objectMapper.readValue(
                     new File(TEST_DATA_LISTS_PATH),
@@ -40,6 +42,7 @@ public class ConfigAndDataUtils {
     }
 
     public static <T> T loadSingleTestDataFromJson(String testClassName, Class<T> clazz) {
+        LogManager.getLogger().info("Loading single test data from json");
         try {
             Map<String, Object> rootMap = objectMapper.readValue(
                     new File(TEST_DATA_SINGLE_PATH),
@@ -60,6 +63,7 @@ public class ConfigAndDataUtils {
     }
 
     private static void loadConfigFromJson() {
+        LogManager.getLogger().info("Loading config data from json");
         try {
             loadedConfig = objectMapper.readValue(new File(CONFIG_PATH), Config.class);
         } catch (IllegalArgumentException | IOException e) {
@@ -68,6 +72,7 @@ public class ConfigAndDataUtils {
     }
 
     public static Config getLoadedConfig() {
+        LogManager.getLogger().debug("Getting loaded config from json");
         if (loadedConfig == null)
             loadConfigFromJson();
         return loadedConfig;

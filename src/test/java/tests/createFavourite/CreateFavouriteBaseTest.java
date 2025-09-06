@@ -6,6 +6,7 @@ import io.restassured.response.Response;
 import models.CreateFavPlaceResponse;
 import models.Place;
 import org.apache.http.HttpStatus;
+import org.apache.logging.log4j.LogManager;
 import org.testng.Assert;
 import requests.v1.favourites.FavRequest;
 import tests.BaseTest;
@@ -20,6 +21,7 @@ import static utils.AssertUtils.assertStatusCode;
 public class CreateFavouriteBaseTest extends BaseTest {
 
     protected void performFavouriteTest(Place place, int expectedStatusCode) {
+        LogManager.getLogger().debug("Performing method to create favourite place test");
         OffsetDateTime utcTime = OffsetDateTime.now(ZoneOffset.UTC);
         Response response = FavRequest.performPost(this.cookie, place);
 
@@ -32,6 +34,7 @@ public class CreateFavouriteBaseTest extends BaseTest {
                                      Place place,
                                      OffsetDateTime nowDateTime,
                                      String dateTimePattern){
+        LogManager.getLogger().info("Asserting response values");
         CreateFavPlaceResponse createFavPlaceResponse = ResponseUtils.getObject(
                 response,
                 ResponsePathConstants.ROOT,

@@ -8,6 +8,7 @@ import io.restassured.filter.log.LogDetail;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
+import org.apache.logging.log4j.LogManager;
 
 import java.util.Map;
 
@@ -16,6 +17,7 @@ public class SpecificationUtils {
     private static final String baseUrl = ConfigAndDataUtils.getLoadedConfig().baseUrl();
 
     public static RequestSpecification getRequestSpecification() {
+        LogManager.getLogger().debug("Getting request specification");
         return new RequestSpecBuilder()
                 .setBaseUri(baseUrl)
                 .log(LogDetail.ALL)
@@ -23,6 +25,7 @@ public class SpecificationUtils {
     }
 
     public static RequestSpecification getRequestSpecification(Object object) {
+        LogManager.getLogger().debug("Getting request specification with object parameter");
         RequestSpecification requestSpecification = new RequestSpecBuilder()
                 .setBaseUri(baseUrl)
                 .log(LogDetail.ALL)
@@ -43,6 +46,7 @@ public class SpecificationUtils {
     }
 
     public static ResponseSpecification getResponseJSONSpecification() {
+        LogManager.getLogger().debug("Getting response json specification");
         return new ResponseSpecBuilder()
                 .expectContentType(ContentType.JSON)
                 .log(LogDetail.ALL)
@@ -50,6 +54,7 @@ public class SpecificationUtils {
     }
 
     public static ResponseSpecification getResponseBINARYSpecification() {
+        LogManager.getLogger().debug("Getting response binary specification");
         return new ResponseSpecBuilder()
                 .expectContentType(ContentType.BINARY)
                 .log(LogDetail.ALL)
