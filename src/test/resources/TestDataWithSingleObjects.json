@@ -1,0 +1,14 @@
+{
+  "TokenTest": {
+    "title": "Restaurant",
+    "lat": 11,
+    "lon": 22,
+    "color": "BLUE"
+  },
+  "NotSupportedFieldTest": {
+    "title": "Restaurant",
+    "lat": 11,
+    "lon": 22,
+    "color": "BLUE"
+  }
+}

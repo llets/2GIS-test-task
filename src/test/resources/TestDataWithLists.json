@@ -1,0 +1,417 @@
+{
+  "WithoutAllNecessaryFieldsTests": [
+    {
+        "title": "Restaurant"
+    },
+    {
+        "lat": 11
+    },
+    {
+        "lon": 22
+    },
+    {
+        "title": "Restaurant",
+        "lat": 11
+    },
+    {
+        "title": "Restaurant",
+        "lon": 22
+    },
+    {
+        "lat": 11,
+        "lon": 22
+    },
+    {
+        "color": "RED"
+    },
+    {
+        "title": "Restaurant",
+        "color": "RED"
+    },
+    {
+        "lat": 11,
+        "color": "RED"
+    },
+    {
+        "lon": 22,
+        "color": "RED"
+    },
+    {
+        "title": "Restaurant",
+        "lat": 11,
+        "color": "RED"
+    },
+    {
+        "title": "Restaurant",
+        "lon": 22,
+        "color": "RED"
+    },
+    {
+        "lat": 11,
+        "lon": 22,
+        "color": "RED"
+    }
+  ],
+  "InvalidTitleRequirementTests": [
+    {
+      "title": "",
+      "lat": 11,
+      "lon": 22,
+      "color": "RED"
+    },
+    {
+      "title": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "lat": 11,
+      "lon": 22,
+      "color": "RED"
+    },
+    {
+      "title": "",
+      "lat": 11,
+      "lon": 22
+    },
+    {
+      "title": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "lat": 11,
+      "lon": 22
+    }
+  ],
+  "ValidTitleRequirementTests": [
+    {
+        "title": " ",
+        "lat": 11,
+        "lon": 22,
+        "color": "RED"
+    },
+    {
+      "title": "1234567890",
+      "lat": 11,
+      "lon": 22,
+      "color": "RED"
+    },
+    {
+        "title": "АаБбВвГгДдЕеЁёЖжЗзИиЙйКкЛлМмНнОоПпРрСсТтУуФфХхЦцЧчШшЩщЪъЫыЬьЭэЮюЯя",
+        "lat": 11,
+        "lon": 22,
+        "color": "RED"
+    },
+    {
+        "title": "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz",
+        "lat": 11,
+        "lon": 22,
+        "color": "RED"
+    },
+    {
+        "title": ".,;:…?!—-«»()’/§№%&*",
+        "lat": 11,
+        "lon": 22,
+        "color": "RED"
+    },
+    {
+      "title": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "lat": 11,
+      "lon": 22,
+      "color": "RED"
+    },
+    {
+        "title": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "lat": 11,
+        "lon": 22,
+        "color": "RED"
+    },
+    {
+      "title": " ",
+      "lat": 11,
+      "lon": 22
+    },
+    {
+      "title": "1234567890",
+      "lat": 11,
+      "lon": 22
+    },
+    {
+        "title": "АаБбВвГгДдЕеЁёЖжЗзИиЙйКкЛлМмНнОоПпРрСсТтУуФфХхЦцЧчШшЩщЪъЫыЬьЭэЮюЯя",
+        "lat": 11,
+        "lon": 22
+    },
+    {
+        "title": "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz",
+        "lat": 11,
+        "lon": 22
+    },
+    {
+        "title": ".,;:…?!—-«»()’/§№%&*",
+        "lat": 11,
+        "lon": 22
+    },
+    {
+      "title": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "lat": 11,
+      "lon": 22
+    },
+    {
+        "title": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "lat": 11,
+        "lon": 22
+    }
+  ],
+  "InvalidLatRequirementTests": [
+    {
+        "title": "Restaurant",
+        "lat": -91,
+        "lon": 22,
+        "color": "RED"
+    },
+    {
+        "title": "Restaurant",
+        "lat": 91,
+        "lon": 22,
+        "color": "RED"
+    },
+    {
+        "title": "Restaurant",
+        "lat": -91,
+        "lon": 22
+    },
+    {
+        "title": "Restaurant",
+        "lat": 91,
+        "lon": 22
+    }
+  ],
+  "ValidLatRequirementTests": [
+    {
+      "title": "Restaurant",
+      "lat": 89,
+      "lon": 22,
+      "color": "RED"
+    },
+    {
+      "title": "Restaurant",
+      "lat": 90,
+      "lon": 22,
+      "color": "RED"
+    },
+    {
+      "title": "Restaurant",
+      "lat": -89,
+      "lon": 22,
+      "color": "RED"
+    },
+    {
+      "title": "Restaurant",
+      "lat": -90,
+      "lon": 22,
+      "color": "RED"
+    },
+    {
+      "title": "Restaurant",
+      "lat": 89,
+      "lon": 22
+    },
+    {
+      "title": "Restaurant",
+      "lat": 90,
+      "lon": 22
+    },
+    {
+      "title": "Restaurant",
+      "lat": -89,
+      "lon": 22
+    },
+    {
+      "title": "Restaurant",
+      "lat": -90,
+      "lon": 22
+    }
+  ],
+  "InvalidLonRequirementTests": [
+    {
+      "title": "Restaurant",
+      "lat": 11,
+      "lon": 181,
+      "color": "RED"
+    },
+    {
+      "title": "Restaurant",
+      "lat": 11,
+      "lon": -181
+    }
+  ],
+  "ValidLonRequirementTests": [
+    {
+        "title": "Restaurant",
+        "lat": 11,
+        "lon": 179,
+        "color": "RED"
+    },
+    {
+        "title": "Restaurant",
+        "lat": 11,
+        "lon": 180,
+        "color": "RED"
+    },
+    {
+      "title": "Restaurant",
+      "lat": 11,
+      "lon": -179,
+      "color": "RED"
+    },
+    {
+      "title": "Restaurant",
+      "lat": 11,
+      "lon": -180,
+      "color": "RED"
+    },
+    {
+        "title": "Restaurant",
+        "lat": 11,
+        "lon": 179
+    },
+    {
+        "title": "Restaurant",
+        "lat": 11,
+        "lon": 180
+    },
+    {
+      "title": "Restaurant",
+      "lat": 11,
+      "lon": -179
+    },
+    {
+      "title": "Restaurant",
+      "lat": 11,
+      "lon": -180
+    }
+  ],
+  "InvalidColorRequirementTests": [
+    {
+        "title": "Restaurant",
+        "lat": 11,
+        "lon": 22,
+        "color": "blue"
+    },
+    {
+        "title": "Restaurant",
+        "lat": 11,
+        "lon": 22,
+        "color": "green"
+    },
+    {
+        "title": "Restaurant",
+        "lat": 11,
+        "lon": 22,
+        "color": "red"
+    },
+    {
+        "title": "Restaurant",
+        "lat": 11,
+        "lon": 22,
+        "color": "yellow"
+    },
+    {
+        "title": "Restaurant",
+        "lat": 11,
+        "lon": 22,
+        "color": "Blue"
+    },
+    {
+        "title": "Restaurant",
+        "lat": 11,
+        "lon": 22,
+        "color": "Green"
+    },
+    {
+        "title": "Restaurant",
+        "lat": 11,
+        "lon": 22,
+        "color": "Red"
+    },
+    {
+        "title": "Restaurant",
+        "lat": 11,
+        "lon": 22,
+        "color": "Yellow"
+    },
+    {
+        "title": "Restaurant",
+        "lat": 11,
+        "lon": 22,
+        "color": ""
+    },
+    {
+        "title": "Restaurant",
+        "lat": 11,
+        "lon": 22,
+        "color": "BLACK"
+    },
+    {
+        "title": "Restaurant",
+        "lat": 11,
+        "lon": 22,
+        "color": "WHITE"
+    },
+    {
+        "title": "Restaurant",
+        "lat": 11,
+        "lon": 22,
+        "color": "PURPLE"
+    },
+    {
+        "title": "Restaurant",
+        "lat": 11,
+        "lon": 22,
+        "color": "BLUE!"
+    },
+    {
+        "title": "Restaurant",
+        "lat": 11,
+        "lon": 22,
+        "color": "123"
+    },
+    {
+        "title": "Restaurant",
+        "lat": 11,
+        "lon": 22,
+        "color": "BLUE "
+    },
+    {
+        "title": "Restaurant",
+        "lat": 11,
+        "lon": 22,
+        "color": " BLUE"
+    },
+    {
+        "title": "Restaurant",
+        "lat": 11,
+        "lon": 22,
+        "color": " BLUE "
+    }
+  ],
+  "ValidColorRequirementTests": [
+    {
+      "title": "Restaurant",
+      "lat": 11,
+      "lon": 22,
+      "color": "BLUE"
+    },
+    {
+      "title": "Restaurant",
+      "lat": 11,
+      "lon": 22,
+      "color": "GREEN"
+    },
+    {
+      "title": "Restaurant",
+      "lat": 11,
+      "lon": 22,
+      "color": "RED"
+    },
+    {
+      "title": "Restaurant",
+      "lat": 11,
+      "lon": 22,
+      "color": "YELLOW"
+    }
+  ]
+}
