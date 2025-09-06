@@ -9,7 +9,7 @@ public class LatTest extends CreateFavouriteBaseTest {
 
     @DataProvider(name = "getInvalidLatRequirementTests")
     public static Object[][] getInvalidLatRequirementTests() {
-        return CreateFavouriteBaseTest.getTests("InvalidLatRequirementTests");
+        return CreateFavouriteBaseTest.getTestData("InvalidLatRequirementTests");
     }
 
     @Test(dataProvider = "getInvalidLatRequirementTests")
@@ -19,7 +19,7 @@ public class LatTest extends CreateFavouriteBaseTest {
 
     @DataProvider(name = "getValidLatRequirementTests")
     public static Object[][] getValidLonRequirementTests() {
-        return CreateFavouriteBaseTest.getTests("ValidLatRequirementTests");
+        return CreateFavouriteBaseTest.getTestData("ValidLatRequirementTests");
     }
 
     @Test(dataProvider = "getValidLatRequirementTests")

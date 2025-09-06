@@ -4,7 +4,6 @@ import io.restassured.http.Cookie;
 import io.restassured.response.Response;
 import models.Place;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.DataProvider;
 import requests.v1.auth.tokens.TokenRequest;
 import utils.ConfigAndDataUtils;
 
@@ -19,6 +18,15 @@ public class BaseTest {
         Response response = TokenRequest.performPost();
         System.out.println(response.getCookie("token"));
         this.cookie = new Cookie.Builder("token", response.getCookie("token")).build();
+    }
+
+    public static Object[][] getTestData(String testsName) {
+        List<Place> places = ConfigAndDataUtils.loadTestsDataFromJson(testsName, Place.class);
+        Object[][] obj = new Object[places.size()][];
+        for (int i = 0; i < places.size(); i++) {
+            obj[i] = new Object[]{places.get(i)};
+        }
+        return obj;
     }
 
 }

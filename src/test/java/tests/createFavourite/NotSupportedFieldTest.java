@@ -1,6 +1,5 @@
 package tests.createFavourite;
 
-import constants.PatternConstants;
 import io.restassured.response.Response;
 import models.Place;
 import org.apache.http.HttpStatus;

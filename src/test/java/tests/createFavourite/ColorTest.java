@@ -9,7 +9,7 @@ public class ColorTest extends CreateFavouriteBaseTest {
 
     @DataProvider(name = "getValidColorRequirementTests")
     public static Object[][] getValidColorRequirementTests() {
-        return CreateFavouriteBaseTest.getTests("ValidColorRequirementTests");
+        return CreateFavouriteBaseTest.getTestData("ValidColorRequirementTests");
     }
     
     @Test(dataProvider = "getValidColorRequirementTests")
@@ -19,7 +19,7 @@ public class ColorTest extends CreateFavouriteBaseTest {
 
     @DataProvider(name = "getInvalidColorRequirementTests")
     public static Object[][] getInvalidColorRequirementTests() {
-        return CreateFavouriteBaseTest.getTests("InvalidColorRequirementTests");
+        return CreateFavouriteBaseTest.getTestData("InvalidColorRequirementTests");
     }
 
     @Test(dataProvider = "getInvalidColorRequirementTests")

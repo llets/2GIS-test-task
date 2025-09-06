@@ -9,7 +9,7 @@ public class TitleTest extends CreateFavouriteBaseTest {
 
     @DataProvider(name = "getInvalidTitleRequirementTests")
     public static Object[][] getInvalidTitleRequirementTests() {
-        return CreateFavouriteBaseTest.getTests("InvalidTitleRequirementTests");
+        return CreateFavouriteBaseTest.getTestData("InvalidTitleRequirementTests");
     }
 
     @Test(dataProvider = "getInvalidTitleRequirementTests")
@@ -19,7 +19,7 @@ public class TitleTest extends CreateFavouriteBaseTest {
 
     @DataProvider(name = "getValidTitleRequirementTests")
     public static Object[][] getValidTitleRequirementTests() {
-        return CreateFavouriteBaseTest.getTests("ValidTitleRequirementTests");
+        return CreateFavouriteBaseTest.getTestData("ValidTitleRequirementTests");
     }
 
     @Test(dataProvider = "getValidTitleRequirementTests")

@@ -9,7 +9,7 @@ public class RequiredFieldsTest extends CreateFavouriteBaseTest{
 
     @DataProvider(name = "getDataRequiredFieldsTest")
     public static Object[][] getDataRequiredFieldsTest() {
-        return CreateFavouriteBaseTest.getTests("WithoutAllNecessaryFieldsTests");
+        return CreateFavouriteBaseTest.getTestData("WithoutAllNecessaryFieldsTests");
     }
 
     @Test(dataProvider = "getDataRequiredFieldsTest")

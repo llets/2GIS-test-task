@@ -9,7 +9,7 @@ public class LonTest extends CreateFavouriteBaseTest {
 
     @DataProvider(name = "getInvalidLonRequirementTests")
     public static Object[][] getInvalidLonRequirementTests() {
-        return CreateFavouriteBaseTest.getTests("InvalidLonRequirementTests");
+        return CreateFavouriteBaseTest.getTestData("InvalidLonRequirementTests");
     }
 
     @Test(dataProvider = "getInvalidLonRequirementTests")
@@ -19,7 +19,7 @@ public class LonTest extends CreateFavouriteBaseTest {
 
     @DataProvider(name = "getValidLonRequirementTests")
     public static Object[][] getValidLonRequirementTests() {
-        return CreateFavouriteBaseTest.getTests("ValidLonRequirementTests");
+        return CreateFavouriteBaseTest.getTestData("ValidLonRequirementTests");
     }
 
     @Test(dataProvider = "getValidLonRequirementTests")

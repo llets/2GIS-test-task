@@ -1,6 +1,6 @@
 package tests.createFavourite;
 
-import constants.PatternConstants;
+import constants.DateTimePatternConstants;
 import constants.ResponsePathConstants;
 import io.restassured.response.Response;
 import models.CreateFavPlaceResponse;
@@ -9,26 +9,15 @@ import org.apache.http.HttpStatus;
 import org.testng.Assert;
 import requests.v1.favourites.FavRequest;
 import tests.BaseTest;
-import utils.ConfigAndDataUtils;
 import utils.ResponseUtils;
 
 import java.time.OffsetDateTime;
 import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
-import java.util.List;
 
 import static utils.AssertUtils.assertStatusCode;
 
 public class CreateFavouriteBaseTest extends BaseTest {
-
-    public static Object[][] getTests(String testsName) {
-        List<Place> places = ConfigAndDataUtils.loadTestsDataFromJson(testsName, Place.class);
-        Object[][] obj = new Object[places.size()][];
-        for (int i = 0; i < places.size(); i++) {
-            obj[i] = new Object[]{places.get(i)};
-        }
-        return obj;
-    }
 
     protected void performFavouriteTest(Place place, int expectedStatusCode) {
         OffsetDateTime utcTime = OffsetDateTime.now(ZoneOffset.UTC);
@@ -36,7 +25,7 @@ public class CreateFavouriteBaseTest extends BaseTest {
 
         assertStatusCode(response, expectedStatusCode);
         if (response.getStatusCode() == HttpStatus.SC_OK)
-            assertResponseValues(response, place, utcTime, PatternConstants.ISO_DATE_TIME);
+            assertResponseValues(response, place, utcTime, DateTimePatternConstants.ISO_DATE_TIME);
     }
 
     protected void assertResponseValues(Response response,
